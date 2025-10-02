@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anil Dhoundiyal - Java Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="bg-animation">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+        <div class="floating-shape shape-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <div class="nav-logo gradient-text">
+                <a href="#home">Anil Dhoundiyal</a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle gradient-btn" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-palette" id="theme-icon"></i>
+                </button>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero gradient-bg-primary">
+        <div class="particles" id="particles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-greeting animate-up">Hi, I'm</h1>
+                    <h2 class="hero-name gradient-text animate-up">Anil Dhoundiyal</h2>
+                    <h3 class="hero-title animate-up">
+                        I am a <span class="typing-text gradient-text" id="typing-text">Java Developer</span>
+                    </h3>
+                    <p class="hero-description animate-up">
+                        Passionate about creating robust backend systems, beautiful user interfaces, 
+                        and full-stack solutions with modern technologies and clean code.
+                    </p>
+                    <div class="hero-buttons animate-up">
+                        <a href="#projects" class="btn gradient-btn glow-effect">View My Work</a>
+                        <a href="#contact" class="btn glass-btn neon-hover">Get In Touch</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="profile-container">
+                        <div class="profile-image gradient-border pulse-animation">
+                            <div class="avatar-placeholder">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="float-element element-1"><i class="fab fa-java"></i></div>
+                            <div class="float-element element-2"><i class="fas fa-database"></i></div>
+                            <div class="float-element element-3"><i class="fas fa-palette"></i></div>
+                            <div class="float-element element-4"><i class="fab fa-react"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about gradient-bg-secondary">
+        <div class="container">
+            <h2 class="section-title gradient-text glow-text">About Me</h2>
+            
+            <div class="about-content">
+                <div class="about-text glass-card">
+                    <p class="text-gradient">
+                        I'm a versatile developer with expertise in Java backend development, UI/UX design, and full-stack web development. 
+                        Currently pursuing my education while continuously expanding my skills across different technologies.
+                    </p>
+                    <p class="text-gradient">
+                        My journey spans from creating robust server-side applications with Spring Boot to designing intuitive user interfaces 
+                        and building complete web solutions with modern frameworks and tools.
+                    </p>
+                </div>
+                
+                <div class="hobbies-section">
+                    <h3 class="hobbies-title gradient-text">My Interests</h3>
+                    <div class="hobbies-grid">
+                        <div class="hobby-card glass-card hover-lift" style="--gradient: linear-gradient(135deg, #F97316, #DC2626)">
+                            <div class="hobby-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span class="hobby-name">Coding</span>
+                        </div>
+                        
+                        <div class="hobby-card glass-card hover-lift" style="--gradient: linear-gradient(135deg, #8B5CF6, #EC4899)">
+                            <div class="hobby-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <span class="hobby-name">Design</span>
+                        </div>
+                        
+                        <div class="hobby-card glass-card hover-lift" style="--gradient: linear-gradient(135deg, #6F4E37, #8B4513)">
+                            <div class="hobby-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <span class="hobby-name">Coffee</span>
+                        </div>
+                        
+                        <div class="hobby-card glass-card hover-lift" style="--gradient: linear-gradient(135deg, #10B981, #06B6D4)">
+                            <div class="hobby-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <span class="hobby-name">Gaming</span>
+                        </div>
+                        
+                        <div class="hobby-card glass-card hover-lift" style="--gradient: linear-gradient(135deg, #3B82F6, #8B5CF6)">
+                            <div class="hobby-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <span class="hobby-name">Music</span>
+                        </div>
+                        
+                        <div class="hobby-card glass-card hover-lift" style="--gradient: linear-gradient(135deg, #EF4444, #F97316)">
+                            <div class="hobby-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <span class="hobby-name">Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills gradient-bg-accent">
+        <div class="container">
+            <h2 class="section-title gradient-text glow-text">My Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-card glass-card hover-glow">
+                    <div class="skill-icon gradient-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3 class="skill-name">Java</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle" data-progress="95">
+                            <svg class="progress-svg">
+                                <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="progress-bar" style="--gradient: linear-gradient(135deg, #ED8B00, #F89820)"></circle>
+                            </svg>
+                            <span class="progress-text">95%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card hover-glow">
+                    <div class="skill-icon gradient-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="skill-name">Spring Boot</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle" data-progress="90">
+                            <svg class="progress-svg">
+                                <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="progress-bar" style="--gradient: linear-gradient(135deg, #6DB33F, #4F7942)"></circle>
+                            </svg>
+                            <span class="progress-text">90%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card hover-glow">
+                    <div class="skill-icon gradient-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-name">Hibernate/JPA</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle" data-progress="85">
+                            <svg class="progress-svg">
+                                <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="progress-bar" style="--gradient: linear-gradient(135deg, #59666C, #BCAE79)"></circle>
+                            </svg>
+                            <span class="progress-text">85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card hover-glow">
+                    <div class="skill-icon gradient-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-name">MySQL</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle" data-progress="80">
+                            <svg class="progress-svg">
+                                <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="progress-bar" style="--gradient: linear-gradient(135deg, #00758F, #F29111)"></circle>
+                            </svg>
+                            <span class="progress-text">80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card hover-glow">
+                    <div class="skill-icon gradient-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-name">HTML5</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle" data-progress="90">
+                            <svg class="progress-svg">
+                                <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="progress-bar" style="--gradient: linear-gradient(135deg, #E34F26, #F06529)"></circle>
+                            </svg>
+                            <span class="progress-text">90%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card hover-glow">
+                    <div class="skill-icon gradient-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3 class="skill-name">CSS3</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle" data-progress="85">
+                            <svg class="progress-svg">
+                                <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="progress-bar" style="--gradient: linear-gradient(135deg, #1572B6, #33A9DC)"></circle>
+                            </svg>
+                            <span class="progress-text">85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card hover-glow">
+                    <div class="skill-icon gradient-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle" data-progress="80">
+                            <svg class="progress-svg">
+                                <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="progress-bar" style="--gradient: linear-gradient(135deg, #F7DF1E, #FFDA44)"></circle>
+                            </svg>
+                            <span class="progress-text">80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card hover-glow">
+                    <div class="skill-icon gradient-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="skill-name">React</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle" data-progress="75">
+                            <svg class="progress-svg">
+                                <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="progress-bar" style="--gradient: linear-gradient(135deg, #61DAFB, #21232A)"></circle>
+                            </svg>
+                            <span class="progress-text">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card hover-glow">
+                    <div class="skill-icon gradient-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="skill-name">Node.js</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle" data-progress="70">
+                            <svg class="progress-svg">
+                                <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="progress-bar" style="--gradient: linear-gradient(135deg, #339933, #68A063)"></circle>
+                            </svg>
+                            <span class="progress-text">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card hover-glow">
+                    <div class="skill-icon gradient-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="skill-name">MongoDB</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle" data-progress="75">
+                            <svg class="progress-svg">
+                                <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="progress-bar" style="--gradient: linear-gradient(135deg, #4DB33D, #3F9A2F)"></circle>
+                            </svg>
+                            <span class="progress-text">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card hover-glow">
+                    <div class="skill-icon gradient-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <h3 class="skill-name">Figma</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle" data-progress="80">
+                            <svg class="progress-svg">
+                                <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="progress-bar" style="--gradient: linear-gradient(135deg, #F24E1E, #A259FF)"></circle>
+                            </svg>
+                            <span class="progress-text">80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card hover-glow">
+                    <div class="skill-icon gradient-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3 class="skill-name">Git/GitHub</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle" data-progress="85">
+                            <svg class="progress-svg">
+                                <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="progress-bar" style="--gradient: linear-gradient(135deg, #F05032, #181717)"></circle>
+                            </svg>
+                            <span class="progress-text">85%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects gradient-bg-dark">
+        <div class="container">
+            <h2 class="section-title gradient-text glow-text">My Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card glass-card hover-3d" style="--project-gradient: linear-gradient(135deg, #F97316 0%, #DC2626 100%)">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay gradient-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title gradient-text">Java E-Commerce API</h3>
+                        <p class="project-description">
+                            RESTful API built with Spring Boot, featuring JWT authentication, MySQL database, 
+                            and comprehensive CRUD operations for e-commerce functionality.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">Hibernate</span>
+                        </div>
+                        <a href="#" class="btn gradient-btn project-btn" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card hover-3d" style="--project-gradient: linear-gradient(135deg, #10B981 0%, #0D9488 100%)">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-overlay gradient-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title gradient-text">Task Management System</h3>
+                        <p class="project-description">
+                            Full-stack application with React frontend and Java Spring Boot backend, 
+                            featuring real-time updates and user authentication.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <a href="#" class="btn gradient-btn project-btn" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card hover-3d" style="--project-gradient: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%)">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="project-overlay gradient-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title gradient-text">UI/UX Design Portfolio</h3>
+                        <p class="project-description">
+                            Comprehensive showcase of user interface and experience designs created using 
+                            Figma and Adobe XD with interactive prototypes.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">Adobe XD</span>
+                            <span class="tech-tag">Prototyping</span>
+                            <span class="tech-tag">User Research</span>
+                        </div>
+                        <a href="#" class="btn gradient-btn project-btn" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact gradient-bg-primary">
+        <div class="container">
+            <h2 class="section-title gradient-text glow-text">Get In Touch</h2>
+            
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form glass-card" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label gradient-text">Name</label>
+                            <input type="text" id="name" name="name" class="form-control glass-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label gradient-text">Email</label>
+                            <input type="email" id="email" name="email" class="form-control glass-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label gradient-text">Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-control glass-input" required></textarea>
+                        </div>
+                        <button type="submit" class="btn gradient-btn glow-effect btn-full">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-card glass-card hover-glow">
+                        <div class="contact-icon gradient-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value gradient-text">anildhoundiyal12345@gmail.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card glass-card hover-glow">
+                        <div class="contact-icon gradient-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value gradient-text">+91 9968824196</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card glass-card hover-glow">
+                        <div class="contact-icon gradient-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value gradient-text">Uttrakhand, pauri</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-effect">
+        <div class="container">
+            <p class="gradient-text">&copy; 2025 Anil Dhoundiyal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
